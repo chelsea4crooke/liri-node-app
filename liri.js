@@ -18,6 +18,17 @@ var fs = require("fs");
 var spotify = new Spotify(keys.spotify);
 
 // FUNCTIONS
+var writeToLog = function(data) {
+  fs.appendFile("log.txt", JSON.stringify(data) + "\n", function(err) {
+    if (err) {
+      return console.log(err);
+    }
+
+    console.log("log.txt was updated!");
+  });
+};
+
+//Spotify Search
 
 var getArtistNames = function(artist) {
   return artist.name;
@@ -147,5 +158,4 @@ var runThis = function(argOne, argTwo) {
   pick(argOne, argTwo);
 };
 
-// MAIN PROCESS
 runThis(process.argv[2], process.argv.slice(3).join(" "));
