@@ -35,7 +35,8 @@ LIRI is a Language Interpretation and Recognition Interface and is a command lin
 Liri-Bot connects with the Spotify Api, runs the commands and outputs the User desired results.
 
 #### **Deployed Version Link:**
-(..github link)
+
+https://chelsea4crooke.github.io/liri-node-app/
 
 ### **Technologies Used:**
 
